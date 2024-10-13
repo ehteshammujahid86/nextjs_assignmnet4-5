@@ -2,26 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.main{
+  width: 100%;
+}
+.nav{ 
+  height: 80px;
+  background-color: #293036;
+  text-align: center;
+  margin: 5px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.nav h1 {
+  font-size: xx-large;
+  color: rgb(164, 177, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  
+}
+.nav p {
+  font-size: large;
+  color: rgb(183, 194, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.body{
+  height: 1190px;
+  background-color: #293036;
+  justify-content: center;
+  margin-left: 30px;
+  padding-top: 70px;
+
+  align-items: center;
+  margin: 5px;
+  border-radius: 20px;
+ }
+.cardbox{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.card{
+  
+  width: 300px;
+  height: 450px;
+  background-color: #a3cec1;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 30px ;
+ box-shadow: 0 0 1px rgb(182, 236, 147),
+  0 0 10px rgb(182, 236, 147),
+  0 0 0px rgb(182, 236, 147),
+  0 0 0px rgb(182, 236, 147),
+  0 0 10px rgb(182, 236, 147); 
+  /* box-shadow: 
+  4px -4px  10px green,4px -4px 10px rgb(238, 255, 0);
+} */
+}
+.card:hover{
+  box-shadow: 
+  0 0 1px skyblue,
+  0 0 10px skyblue,
+  0 0 0px skyblue,
+  0 0 20px skyblue;
+  
+}
+.card h1{
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(41, 73, 255);
+}
+.card image{
+  border-radius: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.content p{
+font-size: 14px;
+font-weight: bold;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+.btn1 button{
+  margin-top: 27px;
+  display: inline-block;
+   border-radius: 40px;
+  background-color: rgb(41, 73, 255);
+  font-size: 15px;
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  font-family:sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 1px rgb(235, 130, 98),
+  0 0 5px  rgb(205, 235, 98) ,
+  0 0 0px rgb(205, 235, 98),
+  0 0 10px  rgb(205, 235, 98);
+  
+}
+.btn1 button:hover{
+  cursor: pointer;
+  color: black;
+  background-color: rgb(255, 252, 252);
+  box-shadow: 0 0 1px cyan,
+  0 0 10px cyan,
+  0 0 0px cyan,
+   0 0 20px cyan;
+}
+.image{
+  height: 200px;
+  width: 260px;
+  border-radius: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+
